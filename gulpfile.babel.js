@@ -19,37 +19,37 @@ const errorHandler = err => {
   })(err);
 };
 
-gulp.task("assets", function() {
+gulp.task("assets", function () {
   return gulp.src("./src/assets/**/*").pipe(gulp.dest("./dist/assets/"));
 });
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp
-    .src("./src/content/**/*.html")
+    .src("./src/**/*.html")
     .pipe(plumber(errorHandler))
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("pwa", function() {
+gulp.task("pwa", function () {
   return gulp
     .src("./src/pwa/**/*")
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp.src('src/js')
-  .pipe(
-    plumber({
-      errorHandler: function(err) {
-        notify.onError({
-          title: `Gulp error in ${err.plugin}`,
-          message: err.toString()
-        })(err);
-      }
-    })
-  )
-  .pipe(webpack(require('./webpack.config.js')))
-  .pipe(gulp.dest('dist/js'));
+    .pipe(
+      plumber({
+        errorHandler: function (err) {
+          notify.onError({
+            title: `Gulp error in ${err.plugin}`,
+            message: err.toString()
+          })(err);
+        }
+      })
+    )
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task("sass", () => {
@@ -57,7 +57,7 @@ gulp.task("sass", () => {
     .src("./src/scss/main.scss")
     .pipe(
       plumber({
-        errorHandler: function(err) {
+        errorHandler: function (err) {
           notify.onError({
             title: `Gulp error in ${err.plugin}`,
             message: err.toString()
@@ -80,13 +80,13 @@ gulp.task("sass", () => {
 
 gulp.task(
   "serve",
-  gulp.series("sass", "html", "js", "assets", "pwa", function() {
+  gulp.series("sass", "html", "js", "assets", "pwa", function () {
     browserSync.init({
       server: "./dist",
       open: true // set to false to disable browser autostart
     });
     gulp.watch("src/scss/**/*", gulp.series("sass"));
-    gulp.watch("src/content/**/*.html", gulp.series("html"));
+    gulp.watch("src/**/*.html", gulp.series("html"));
     gulp.watch("src/pwa/**/*", gulp.series("pwa"));
     gulp.watch("src/js/*.js", gulp.series("js"));
     gulp.watch("src/assets/**/*", gulp.series("assets"));

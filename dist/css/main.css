@@ -307,6 +307,11 @@ template {
 [hidden] {
   display: none; }
 
+.list {
+  padding: 0 .5rem; }
+  .list__heading {
+    text-align: center; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -314,5 +319,8 @@ html {
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
