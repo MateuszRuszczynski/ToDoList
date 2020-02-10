@@ -407,7 +407,6 @@ template {
       margin-right: 2rem; }
 
 .completed {
-  font-size: 1rem;
   color: #e9e3e35b;
   text-decoration: line-through;
   font-style: italic; }
