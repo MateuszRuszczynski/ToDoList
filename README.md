@@ -1,4 +1,15 @@
-# wtf-gulp-starter
+![cover](src/assets/img/cover.png)
+
+# Narzędzia i technologie:
+
+- Visual Studio Code
+- HTML
+- SASS
+- Java script
+- Gulp
+- Npm
+
+# Aby uruchomić wpisz komendy:
 
 `npm install -g gulp-cli`
 
@@ -6,4 +17,3 @@
 
 `gulp`
 
-To publish your page using github pages use `npm run deploy`
