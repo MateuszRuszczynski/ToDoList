@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ToDoList</title>
+  <meta name="description" content="Description" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <section class="list">
+    <header class="list__header">
+      <h1 class="list__heading">TODO LIST</h1>
+      <div class="list__box">
+        <input type="text" class="list__input" placeholder="Dodaj nowe zadanie">
+        <button class="list__btn">Dodaj</button>
+      </div>
+    </header>
+    <section class="task">
+      <h2 class="task__heading">LISTA ZADAŃ:</h2>
+      <p class="task__text"></p>
+      <ul class="task__list">
+        <!-- <li class="task__item">
+          <p class="task__details">Wypić kawę</p>
+          <div class="task__box">
+            <button class="task__btn task__btn--add"><i class="fas fa-plus"></i></button>
+            <button class="task__btn task__btn--edit">EDYTUJ</button>
+            <button class="task__btn task__btn--remove"><i class="fas fa-minus"></i></button>
+          </div>
+        </li>
+        <li class="task__item">
+          <p class="task__details">Wypić kawę</p>
+          <div class="task__box">
+            <button class="task__btn task__btn--add"><i class="fas fa-plus"></i></button>
+            <button class="task__btn task__btn--edit">EDYTUJ</button>
+            <button class="task__btn task__btn--remove"><i class="fas fa-minus"></i></button>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+    <section class="popup">
+      <h3 class="popup__heading">Edytuj zadanie</h3>
+      <p class="popup__text"></p>
+      <input type="text" class="popup__input" placeholder="Wpisz nowe zadanie">
+      <div class="popup__box">
+        <button class="popup__btn popup__btn--confirm">ZATWIERDŹ</button>
+        <button class="popup__btn popup__btn--cancel">ANULUJ</button>
+      </div>
+    </section>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
