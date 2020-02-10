@@ -26,19 +26,26 @@
       <p class="task__text">Brak zadań na liście</p>
       <ul class="task__list">
         <li class="task__item">
-          <p class="task__text">Wypić kawę</p>
+          <p class="task__details">Wypić kawę</p>
           <div class="task__box">
-            <button class="task__add"><i class="fas fa-plus"></i></button>
-            <button class="task__edit">EDIT</button>
-            <button class="task__delete"><i class="fas fa-minus"></i></button>
+            <button class="task__btn task__btn--add"><i class="fas fa-plus"></i></button>
+            <button class="task__btn task__btn--edit">EDYTUJ</button>
+            <button class="task__btn task__btn--remove"><i class="fas fa-minus"></i></button>
           </div>
         </li>
-        <li class="task__item"></li>
+        <li class="task__item">
+          <p class="task__details">Wypić kawę</p>
+          <div class="task__box">
+            <button class="task__btn task__btn--add"><i class="fas fa-plus"></i></button>
+            <button class="task__btn task__btn--edit">EDYTUJ</button>
+            <button class="task__btn task__btn--remove"><i class="fas fa-minus"></i></button>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="popup">
-      <h3 class="popup">Edytuj zadanie</h3>
-      <input type="text" class="popup__input">
+      <h3 class="popup__heading">Edytuj zadanie</h3>
+      <input type="text" class="popup__input" placeholder="Podaj nowe zadanie">
       <div class="popup__box">
         <button class="popup__btn popup__btn--confirm">ZATWIERDŹ</button>
         <button class="popup__btn popup--btn--cancel">ANULUJ</button>
