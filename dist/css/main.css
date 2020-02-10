@@ -307,6 +307,13 @@ template {
 [hidden] {
   display: none; }
 
+@media (min-width: 1024px) {
+  .list {
+    max-width: 1100px;
+    margin: 7rem auto 0;
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); } }
+
 .list__header {
   padding: 0 .5rem;
   margin-bottom: 4rem; }
@@ -314,6 +321,9 @@ template {
 .list__heading {
   text-align: center;
   margin: 1rem 0; }
+  @media (min-width: 1024px) {
+    .list__heading {
+      padding-top: 2rem; } }
 
 .list__box {
   display: -webkit-box;
@@ -349,6 +359,10 @@ template {
   border-top-right-radius: 40px;
   padding: .5rem 1rem;
   color: #fff; }
+  @media (min-width: 1024px) {
+    .task {
+      -webkit-box-shadow: 0 10px 6px -6px #777;
+              box-shadow: 0 10px 6px -6px #777; } }
   .task__heading {
     text-align: center; }
   .task__text {
@@ -434,6 +448,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(217, 217, 217, 0.192); }
 
 /*# sourceMappingURL=main.css.map */
