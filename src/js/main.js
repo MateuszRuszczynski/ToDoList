@@ -1,7 +1,7 @@
-let inputToDo;
-let headingAlert;
-let btnAddTask;
-let taskList;
+let inputToDo; //wpisywanie zadania
+let headingAlert; //brak zadan
+let btnAddTask; //przycisk do dodawania
+let taskList; //ul lista
 
 const main = () => {
   getElemnts();
@@ -19,6 +19,14 @@ const getEvents = () => {
 
 };
 
+const addNewTask = () => {
+  if (inputToDo.value !== ' ') {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = inputToDo.value;
+  } else {
+
+  }
+}
 
 
 document.addEventListener('DOMContentLoaded', main);
