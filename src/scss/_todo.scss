@@ -52,9 +52,10 @@
     font-size: 1.1rem;
     position: relative;
     border-bottom: 1px solid $b-color;
+    margin-top: 2rem;
   }
   &__box{
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
   &__btn{
     background-color: transparent;
@@ -74,6 +75,7 @@
 }
 
 .popup{
+  display: none;
   background-color: $popup-color;
   color: $white-color;
   text-align: center;
@@ -99,9 +101,9 @@
   }
 }
 
-.done{
-  font-size: .8rem;
-  color: gray;
+.completed{
+  font-size: 1rem;
+  color: $b-color;
   text-decoration: line-through;
   font-style: italic;
 }

@@ -368,9 +368,10 @@ template {
             flex-direction: column;
     font-size: 1.1rem;
     position: relative;
-    border-bottom: 1px solid #e9e3e35b; }
+    border-bottom: 1px solid #e9e3e35b;
+    margin-top: 2rem; }
   .task__box {
-    margin-bottom: 1rem; }
+    margin: 1rem 0; }
   .task__btn {
     background-color: transparent;
     border: none;
@@ -384,6 +385,7 @@ template {
       color: red; }
 
 .popup {
+  display: none;
   background-color: #8C8C8C;
   color: #fff;
   text-align: center;
@@ -404,9 +406,9 @@ template {
     .popup__btn:not(:last-child) {
       margin-right: 2rem; }
 
-.done {
-  font-size: .8rem;
-  color: gray;
+.completed {
+  font-size: 1rem;
+  color: #e9e3e35b;
   text-decoration: line-through;
   font-style: italic; }
 
