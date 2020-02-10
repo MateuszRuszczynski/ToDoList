@@ -16,6 +16,10 @@
     margin-bottom: 1rem;
     border: 1px solid $primary-color;
     border-radius: 5px;
+    @media (min-width: 768px){
+      width: 80%;
+      margin: 0 auto 1rem;
+    }
   }
   &__btn{
     width: 100px;
@@ -53,6 +57,9 @@
     position: relative;
     border-bottom: 1px solid $b-color;
     margin-top: 2rem;
+    @media (min-width: 768px){
+      flex-direction: row;
+    }
   }
   &__box{
     margin: 1rem 0;
@@ -87,6 +94,10 @@
     padding: .5rem 1rem;
     width: 100%;
     margin-bottom: 1.5rem;
+    @media (min-width: 768px){
+      width: 80%;
+      margin: 0 auto 1.5rem;
+    }
   }
   &__btn{
     background-color: transparent;

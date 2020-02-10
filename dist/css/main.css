@@ -329,6 +329,10 @@ template {
   margin-bottom: 1rem;
   border: 1px solid #2398FF;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    .list__input {
+      width: 80%;
+      margin: 0 auto 1rem; } }
 
 .list__btn {
   width: 100px;
@@ -370,6 +374,12 @@ template {
     position: relative;
     border-bottom: 1px solid #e9e3e35b;
     margin-top: 2rem; }
+    @media (min-width: 768px) {
+      .task__item {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
   .task__box {
     margin: 1rem 0; }
   .task__btn {
@@ -396,6 +406,10 @@ template {
     padding: .5rem 1rem;
     width: 100%;
     margin-bottom: 1.5rem; }
+    @media (min-width: 768px) {
+      .popup__input {
+        width: 80%;
+        margin: 0 auto 1.5rem; } }
   .popup__btn {
     background-color: transparent;
     color: #fff;
